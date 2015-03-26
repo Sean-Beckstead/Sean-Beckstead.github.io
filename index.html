@@ -17,21 +17,82 @@
     <link href="./css/carousel.css" rel="stylesheet">
 </head>
 <body>
-     <div id="headerDiv"></div>    
+     <div id="headerDiv"></div>
+
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+               <div class="item active">
+                    <img src="./img/mayhemmonkey.png" alt="first slide">
+                    <div class="container">
+                         <div class="carousel-caption">
+                             <p><a class="btn btn-lg btn-primary" href="monkey.html" role="button">View More</a></p>
+                         </div>
+                    </div>
+               </div>
+               <div class="item">
+                    <img src="./img/fallingbricks.png" alt="Second slide">
+                    <div class="container">
+                         <div class="carousel-caption">
+                             <p><a class="btn btn-lg btn-primary" href="bricks.html" role="button">View More</a></p>
+                         </div>
+                    </div>
+               </div>
+               
+          </div>
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+          </a>
+     </div>
 
 
 
-     <div class="container">   
-     <div class="row">
-      <br />
-      <br />
-      <br />
-     </div>       
+     <div class="container">
+          <div class="alert alert-info" role="alert">
+               <div class="jumbotron alert-info">
+                 <h1>About Me <small>(Sean Beckstead)</small></h1>
+               </div>
+          </div>
+          <hr />
+          <div class="row">
+               <div class="col-lg-12">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As you may have guessed my name is Sean Beckstead and I'm a computer programmer. Currently I work for a school district as one of their Application Engineers. We primarily develop web based applications written in ColdFusion. There are some other projects involving C# including our Active Directory tool that pulls in information HR information and manages our Active Directory. Enough about work though, in my spare time I tend to be either playing games or developing them. I have started working with the Unity game engine as of recent and have really enjoyed it. I have created web friendly versions of some of my games and have posted them under my projects section. There will also be a link to an .apk as some games were intended Android. As far as the gaming is concerned Dota 2 has consumed most of my play time. 
+               </div>               
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <br />
+            </div>
+          </div>
+          <div class="alert alert-info" role="alert">
+               <div class="jumbotron alert-info">
+                 <h1>Projects <small>(The Goods)</small></h1>
+               </div>
+          </div>
+          <hr />
           <div class="row">
                <div class="col-lg-4">
-                    <iframe src="./games/mayhemmonkey/mayhemmonkey.html" width="1080" height="760"></iframe>
+                    <img src="./img/mayhemmonkey.png" alt="Mayhem Monkey" style="width: 140px; height: 140px;">
+                    <h3>Mayhem Monkey</h3>
+                    <p>Mayhem Monkey is a project being created for my CS 4750 Software Engineering course. I am working with a team of three other programmers and have been tasked with the handling the graphics. My other role has been implementing Git and teaching the rest of the team how to effectively use Git. The game play is quite easy, all you need to do is keep jumping on the bed and collecting bananas as they pass by. The challenge is dodging incoming objects like Ceiling fans which will knock you off course to land on the bed. Work in progress...</p>
+                    <p><a class="btn btn-primary" href="monkey.html" role="button">View details &raquo;</a></p>
                </div>  
-                            
+               <div class="col-lg-4">
+                    <img src="./img/fallingbricks.png" alt="Falling Bricks" style="width: 140px; height: 140px;">
+                    <h3>Falling Bricks</h3>
+                    <p>Falling Bricks is a simple game that is intended to test the gamers ability to dodge falling objects. The plan is to implement a scoring system based on staying inside the scoring area of the game as well as collection of certain falling objects. Work in progress...</p>
+                    <p><a class="btn btn-primary" href="bricks.html" role="button">View details &raquo;</a></p>
+               </div>               
           </div>
 
           <hr />
